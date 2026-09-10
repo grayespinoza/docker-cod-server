@@ -1,0 +1,3 @@
+[submodule "plutonium"]
+	path = plutonium
+	url = https://github.com/grayespinoza/docker-plutonium-server.git
