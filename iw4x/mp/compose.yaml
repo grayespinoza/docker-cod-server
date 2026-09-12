@@ -1,0 +1,17 @@
+---
+x-defaults: &defaults
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+services:
+  iw4x:
+    <<: *defaults
+    platform: linux/386
+    restart: unless-stopped
+    build: .
+    ports:
+      - 28960:28960/tcp
+      - 28960:28960/udp
+    volumes:
+      - ./server:/home/iw4x/server
