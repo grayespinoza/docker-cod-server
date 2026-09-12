@@ -1,6 +1,6 @@
 FROM docker.io/i386/debian:12.15-slim
 
-ENV IW4X_ARGS="-dedicated +set sv_lanonly 1 +set net_port 28960 +map_rotate +exec server.cfg"
+ENV IW4X_ARGS="-dedicated +set sv_lanonly 1 +set net_port 28960 +map_rotate +set fs_game mods/mp_bots +exec server.cfg"
 
 RUN \
   apt-get update && \
