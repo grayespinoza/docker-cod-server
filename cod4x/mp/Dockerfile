@@ -1,4 +1,4 @@
-FROM docker.io/i386/debian:12.15
+FROM docker.io/i386/debian:12.15-slim
 
 ENV COD4X_ARGS="+set dedicated 1 +set sv_punkbuster 0 +set sv_maxclients 16 +map_rotate +exec server.cfg"
 
