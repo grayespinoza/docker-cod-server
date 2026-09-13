@@ -14,6 +14,6 @@ USER iw4x
 WORKDIR /home/iw4x/server
 
 VOLUME /home/iw4x/server
-EXPOSE 28960/tcp 28960/udp
+EXPOSE 28960/udp
 
 CMD ["sh", "-c", "exec wine ./iw4x.exe $IW4X_ARGS"]

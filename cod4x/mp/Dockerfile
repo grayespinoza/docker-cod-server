@@ -14,6 +14,6 @@ USER cod4x
 WORKDIR /home/cod4x/server
 
 VOLUME /home/cod4x/server
-EXPOSE 28960/tcp 28960/udp
+EXPOSE 28960/udp
 
 CMD ["sh", "-c", "exec ./cod4x18_dedrun $COD4X_ARGS"]

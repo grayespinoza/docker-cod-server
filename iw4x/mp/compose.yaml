@@ -8,10 +8,15 @@ services:
   iw4x:
     <<: *defaults
     platform: linux/386
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+          cpus: "2"
+    user: 1000:1000
     restart: unless-stopped
     build: .
     ports:
-      - 28960:28960/tcp
       - 28960:28960/udp
     volumes:
-      - ./server:/home/iw4x/server
+      - ./server:/home/iw4x/server:ro
