@@ -1,6 +1,6 @@
 FROM docker.io/i386/debian:12.15-slim
 
-ENV COD4X_ARGS="+set dedicated 1 +set sv_punkbuster 0 +set sv_maxclients 16 +set fs_game mods/mp_bots +exec server.cfg +map_rotate"
+ENV COD4X_ARGS="+set dedicated 1 +set sv_punkbuster 0 +set sv_maxclients 18 +set fs_game mods/mp_bots +exec lan-dom-mp-bots.cfg +map_rotate"
 
 RUN \
   apt-get update && \
